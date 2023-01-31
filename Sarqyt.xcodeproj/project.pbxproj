@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF418B5229898CC000828CD3 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B5129898CC000828CD3 /* SignInView.swift */; };
+		FF418B5529899AAE00828CD3 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B5429899AAE00828CD3 /* LogInView.swift */; };
+		FF418B572989AC9000828CD3 /* Toggle-Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B562989AC9000828CD3 /* Toggle-Checkbox.swift */; };
+		FF418B592989AF3300828CD3 /* CustomTextFieldWithWrapperAround.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B582989AF3300828CD3 /* CustomTextFieldWithWrapperAround.swift */; };
+		FF418B5E2989B0C800828CD3 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B5D2989B0C800828CD3 /* PrimaryButton.swift */; };
+		FF418B612989B17F00828CD3 /* LineBreakerWithText.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B602989B17F00828CD3 /* LineBreakerWithText.swift */; };
+		FF418B632989B9CD00828CD3 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B622989B9CD00828CD3 /* SecureTextField.swift */; };
+		FF418B652989C20300828CD3 /* TextField-Secure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B642989C20300828CD3 /* TextField-Secure.swift */; };
 		FF495576298805A90009B7C4 /* SarqytApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF495575298805A90009B7C4 /* SarqytApp.swift */; };
 		FF495578298805A90009B7C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF495577298805A90009B7C4 /* ContentView.swift */; };
 		FF49557A298805AB0009B7C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF495579298805AB0009B7C4 /* Assets.xcassets */; };
@@ -14,6 +22,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF418B5129898CC000828CD3 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		FF418B5429899AAE00828CD3 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		FF418B562989AC9000828CD3 /* Toggle-Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Toggle-Checkbox.swift"; sourceTree = "<group>"; };
+		FF418B582989AF3300828CD3 /* CustomTextFieldWithWrapperAround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldWithWrapperAround.swift; sourceTree = "<group>"; };
+		FF418B5D2989B0C800828CD3 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		FF418B602989B17F00828CD3 /* LineBreakerWithText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineBreakerWithText.swift; sourceTree = "<group>"; };
+		FF418B622989B9CD00828CD3 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
+		FF418B642989C20300828CD3 /* TextField-Secure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField-Secure.swift"; sourceTree = "<group>"; };
 		FF495572298805A90009B7C4 /* Sarqyt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sarqyt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF495575298805A90009B7C4 /* SarqytApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SarqytApp.swift; sourceTree = "<group>"; };
 		FF495577298805A90009B7C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +48,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF418B53298998D400828CD3 /* Registration View */ = {
+			isa = PBXGroup;
+			children = (
+				FF418B5429899AAE00828CD3 /* LogInView.swift */,
+				FF418B5129898CC000828CD3 /* SignInView.swift */,
+			);
+			path = "Registration View";
+			sourceTree = "<group>";
+		};
+		FF418B5A2989AFDC00828CD3 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FF418B562989AC9000828CD3 /* Toggle-Checkbox.swift */,
+				FF418B582989AF3300828CD3 /* CustomTextFieldWithWrapperAround.swift */,
+				FF418B642989C20300828CD3 /* TextField-Secure.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FF418B5F2989B11F00828CD3 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				FF418B5D2989B0C800828CD3 /* PrimaryButton.swift */,
+				FF418B602989B17F00828CD3 /* LineBreakerWithText.swift */,
+				FF418B622989B9CD00828CD3 /* SecureTextField.swift */,
+			);
+			path = "Custom View";
+			sourceTree = "<group>";
+		};
 		FF495569298805A90009B7C4 = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +98,9 @@
 			children = (
 				FF495575298805A90009B7C4 /* SarqytApp.swift */,
 				FF495577298805A90009B7C4 /* ContentView.swift */,
+				FF418B5A2989AFDC00828CD3 /* Extension */,
+				FF418B5F2989B11F00828CD3 /* Custom View */,
+				FF418B53298998D400828CD3 /* Registration View */,
 				FF495579298805AB0009B7C4 /* Assets.xcassets */,
 				FF49557B298805AB0009B7C4 /* Preview Content */,
 			);
@@ -137,7 +185,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF418B5229898CC000828CD3 /* SignInView.swift in Sources */,
+				FF418B612989B17F00828CD3 /* LineBreakerWithText.swift in Sources */,
 				FF495578298805A90009B7C4 /* ContentView.swift in Sources */,
+				FF418B632989B9CD00828CD3 /* SecureTextField.swift in Sources */,
+				FF418B572989AC9000828CD3 /* Toggle-Checkbox.swift in Sources */,
+				FF418B592989AF3300828CD3 /* CustomTextFieldWithWrapperAround.swift in Sources */,
+				FF418B652989C20300828CD3 /* TextField-Secure.swift in Sources */,
+				FF418B5E2989B0C800828CD3 /* PrimaryButton.swift in Sources */,
+				FF418B5529899AAE00828CD3 /* LogInView.swift in Sources */,
 				FF495576298805A90009B7C4 /* SarqytApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
