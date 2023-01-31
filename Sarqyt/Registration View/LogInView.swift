@@ -50,83 +50,73 @@ struct LogInView: View {
     @State private var email = ""
     @State private var password = ""
     @State private var checked = false
+    @State private var isPasswordHidden = true
+    @FocusState private var inFocus: Field?
+    @State private var showingAlert = false
     var body: some View {
-        VStack(spacing: 20){
+        ScrollView(.vertical, showsIndicators: false){
+            
+            //TextField for email
             HStack{
-                Button{
-                    print("")
-                } label: {
-                    Image(systemName: "envelope.fill")
-                        .foregroundColor(.secondary)
-                }
-                TextField("Email", text: $email)
+                Image(systemName: "envelope.fill")
+                    .foregroundColor(.secondary)
+                TextField("Email", text: $email, onCommit: {
+                    inFocus = .securedPassword
+                })
+                    .focused($inFocus, equals: .email)
+                    .submitLabel(.next)
                     .padding()
             }
-            .padding(.horizontal)
-            .background(colorScheme == .dark ? Color.gray.opacity(0.15) : Color.gray.opacity(0.07))
-            .clipShape(RoundedRectangle(cornerRadius: 5))
+            .customTextField()
             
+            //TextField for email
             HStack{
-                Button{
-                    print("")
-                } label: {
-                    Image(systemName: "lock.fill")
-                        .foregroundColor(.secondary)
+                Image(systemName: "lock.fill")
+                    .foregroundColor(.secondary)
+                SecureTextfField(password: $password, isHidden: $isPasswordHidden, secureInFocus: $inFocus){
+                    credentialsEntered()
                 }
-                TextField("Password", text: $password)
                     .padding()
                 Button{
-                    print("")
+                    isPasswordHidden.toggle()
                 } label: {
-                    Image(systemName: "eye.slash.fill")
+                    Image(systemName: isPasswordHidden ? "eye.fill" : "eye.slash.fill")
                         .foregroundColor(.secondary)
                 }
             }
-            .padding(.horizontal)
-            .background(colorScheme == .dark ? Color.gray.opacity(0.15) : Color.gray.opacity(0.07))
-            .clipShape(RoundedRectangle(cornerRadius: 5))
+            .customTextField()
+            .padding(.vertical)
             
-            Toggle(isOn: $checked) {
-                Text("Remember me")
+            //Remember me checkbox
+            HStack{
+                Toggle(isOn: $checked) {
+                    Text("Remember me")
+                }
+                .toggleStyle(CheckboxStyle())
+                Spacer()
             }
-            .toggleStyle(CheckboxStyle())
+            .padding(.vertical)
+            
             
             NavigationLink{
                 Text("Logged in")
             }label: {
-                Text("Sign in")
-                    .foregroundColor(.white)
-                    .padding()
-                    .frame(maxWidth: .infinity)
-                    .background(.green)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                    .shadow(color: .gray, radius: 5, x: 0, y: 1)
+                PrimaryButton(buttonLabel: "Sign In")
             }
+            .padding(.vertical)
             
             Button{
-                print("")
+                print("Forgot password button is clicked")
             }label: {
                 Text("Forgot password?")
                     .foregroundColor(.green)
             }
             .padding(.bottom)
             
-            HStack{
-                Rectangle()
-                    .frame(maxWidth: .infinity, maxHeight: 1)
-                    .foregroundColor(.gray.opacity(0.3))
-                Text("or continue with")
-                    .frame(minWidth: 150)
-                    .scaledToFit()
-                Rectangle()
-                    .frame(maxWidth: .infinity, maxHeight: 1)
-                    .foregroundColor(.gray.opacity(0.3))
-            }
-            .foregroundColor(.secondary)
-            .padding(.vertical)
-            
+            LineBreakerWithText(text: "or continue with")
             
             CardLogoView()
+                .padding(.vertical)
             
             HStack{
                 Text("Don't have an account?")
@@ -140,7 +130,22 @@ struct LogInView: View {
             }
         }
         .padding()
-        .navigationTitle("Login")
+        .alert("Credentials Error", isPresented: $showingAlert) {
+            Button("OK"){}
+        }message: {
+            Text("Email or password has not been provided. Please make sure that all fields are properly formed.")
+        }
+    }
+    
+    enum Field: Hashable{
+        case email, securedPassword, revealedPassword
+    }
+    
+    func credentialsEntered() {
+        if email.isEmpty || password.isEmpty{
+            showingAlert = true
+        }
+        print("Logged in")
     }
 }
 
@@ -149,6 +154,5 @@ struct LogInView_Previews: PreviewProvider {
         NavigationView{
             LogInView()
         }
-        .preferredColorScheme(.dark)
     }
 }

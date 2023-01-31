@@ -55,6 +55,7 @@ struct SignInView: View {
             NavigationLink{
                 LogInView()
                     .navigationTitle("Log In")
+                    .navigationBarTitleDisplayMode(.inline)
             }label: {
                 Text("Sign in with password")
                     .frame(maxWidth: .infinity)
