@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct SecureTextfField: View{
+struct SecurePassword: View{
     @Binding var password: String
     @Binding var isHidden: Bool
-    var secureInFocus: FocusState<LogInView.Field?>.Binding
+    var secureInFocus: FocusState<RegistrationField?>.Binding
     var completeion: () -> Void
     var body: some View{
         ZStack(alignment: .leading) {

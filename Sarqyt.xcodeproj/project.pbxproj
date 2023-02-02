@@ -13,7 +13,7 @@
 		FF418B592989AF3300828CD3 /* CustomTextFieldWithWrapperAround.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B582989AF3300828CD3 /* CustomTextFieldWithWrapperAround.swift */; };
 		FF418B5E2989B0C800828CD3 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B5D2989B0C800828CD3 /* PrimaryButton.swift */; };
 		FF418B612989B17F00828CD3 /* LineBreakerWithText.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B602989B17F00828CD3 /* LineBreakerWithText.swift */; };
-		FF418B632989B9CD00828CD3 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B622989B9CD00828CD3 /* SecureTextField.swift */; };
+		FF418B632989B9CD00828CD3 /* SecurePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B622989B9CD00828CD3 /* SecurePassword.swift */; };
 		FF418B652989C20300828CD3 /* TextField-Secure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B642989C20300828CD3 /* TextField-Secure.swift */; };
 		FF463F4A298ABA8F000A6723 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF463F49298ABA8F000A6723 /* DatePickerView.swift */; };
 		FF463F4F298AC824000A6723 /* String-PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF463F4E298AC824000A6723 /* String-PhoneNumber.swift */; };
@@ -28,6 +28,8 @@
 		FFA4AD72298BD3B400F3A950 /* TakeImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD71298BD3B400F3A950 /* TakeImageService.swift */; };
 		FFA4AD77298BE4AC00F3A950 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD76298BE4AC00F3A950 /* SignUpView.swift */; };
 		FFA4AD7A298BE5B800F3A950 /* CardLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD79298BE5B800F3A950 /* CardLogoView.swift */; };
+		FFA4AD7D298BF4C600F3A950 /* ConfirmationPasswordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD7C298BF4C600F3A950 /* ConfirmationPasswordField.swift */; };
+		FFA4AD80298BF51500F3A950 /* RegistrationField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD7F298BF51500F3A950 /* RegistrationField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +39,7 @@
 		FF418B582989AF3300828CD3 /* CustomTextFieldWithWrapperAround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldWithWrapperAround.swift; sourceTree = "<group>"; };
 		FF418B5D2989B0C800828CD3 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		FF418B602989B17F00828CD3 /* LineBreakerWithText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineBreakerWithText.swift; sourceTree = "<group>"; };
-		FF418B622989B9CD00828CD3 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
+		FF418B622989B9CD00828CD3 /* SecurePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurePassword.swift; sourceTree = "<group>"; };
 		FF418B642989C20300828CD3 /* TextField-Secure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField-Secure.swift"; sourceTree = "<group>"; };
 		FF463F49298ABA8F000A6723 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		FF463F4E298AC824000A6723 /* String-PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-PhoneNumber.swift"; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		FFA4AD71298BD3B400F3A950 /* TakeImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeImageService.swift; sourceTree = "<group>"; };
 		FFA4AD76298BE4AC00F3A950 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		FFA4AD79298BE5B800F3A950 /* CardLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLogoView.swift; sourceTree = "<group>"; };
+		FFA4AD7C298BF4C600F3A950 /* ConfirmationPasswordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationPasswordField.swift; sourceTree = "<group>"; };
+		FFA4AD7F298BF51500F3A950 /* RegistrationField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +96,6 @@
 			children = (
 				FF418B5D2989B0C800828CD3 /* PrimaryButton.swift */,
 				FF418B602989B17F00828CD3 /* LineBreakerWithText.swift */,
-				FF418B622989B9CD00828CD3 /* SecureTextField.swift */,
 			);
 			path = "Custom View";
 			sourceTree = "<group>";
@@ -118,9 +121,9 @@
 			children = (
 				FF495575298805A90009B7C4 /* SarqytApp.swift */,
 				FF495577298805A90009B7C4 /* ContentView.swift */,
-				FFA4AD6A298BCE0800F3A950 /* RegistrationModule */,
-				FFA4AD67298BBA7500F3A950 /* PhotoService */,
 				FF418B5A2989AFDC00828CD3 /* Extension */,
+				FFA4AD7B298BE64F00F3A950 /* Service */,
+				FFA4AD6A298BCE0800F3A950 /* RegistrationModule */,
 				FF418B5F2989B11F00828CD3 /* Custom View */,
 				FF418B53298998D400828CD3 /* SignInModule */,
 				FF495579298805AB0009B7C4 /* Assets.xcassets */,
@@ -149,8 +152,9 @@
 		FFA4AD6A298BCE0800F3A950 /* RegistrationModule */ = {
 			isa = PBXGroup;
 			children = (
-				FFA4AD75298BE47F00F3A950 /* SignUpView */,
+				FFA4AD7E298BF50100F3A950 /* Model */,
 				FFA4AD6C298BCE3200F3A950 /* CustomView */,
+				FFA4AD75298BE47F00F3A950 /* SignUpView */,
 				FFA4AD6B298BCE2500F3A950 /* RegistrationView */,
 			);
 			path = RegistrationModule;
@@ -167,6 +171,8 @@
 		FFA4AD6C298BCE3200F3A950 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
+				FF418B622989B9CD00828CD3 /* SecurePassword.swift */,
+				FFA4AD7C298BF4C600F3A950 /* ConfirmationPasswordField.swift */,
 				FF463F49298ABA8F000A6723 /* DatePickerView.swift */,
 				FFA4AD6D298BCE8500F3A950 /* ProfileImageView.swift */,
 				FFA4AD6F298BCEBA00F3A950 /* DropDownGnederPickerView.swift */,
@@ -188,6 +194,22 @@
 				FFA4AD79298BE5B800F3A950 /* CardLogoView.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		FFA4AD7B298BE64F00F3A950 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FFA4AD67298BBA7500F3A950 /* PhotoService */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FFA4AD7E298BF50100F3A950 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFA4AD7F298BF51500F3A950 /* RegistrationField.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,10 +292,12 @@
 				FFA4AD72298BD3B400F3A950 /* TakeImageService.swift in Sources */,
 				FFA4AD69298BBAC900F3A950 /* ImagePicker.swift in Sources */,
 				FFA4AD70298BCEBA00F3A950 /* DropDownGnederPickerView.swift in Sources */,
+				FFA4AD7D298BF4C600F3A950 /* ConfirmationPasswordField.swift in Sources */,
 				FF495578298805A90009B7C4 /* ContentView.swift in Sources */,
-				FF418B632989B9CD00828CD3 /* SecureTextField.swift in Sources */,
+				FF418B632989B9CD00828CD3 /* SecurePassword.swift in Sources */,
 				FF463F4F298AC824000A6723 /* String-PhoneNumber.swift in Sources */,
 				FF418B572989AC9000828CD3 /* Toggle-Checkbox.swift in Sources */,
+				FFA4AD80298BF51500F3A950 /* RegistrationField.swift in Sources */,
 				FF463F4A298ABA8F000A6723 /* DatePickerView.swift in Sources */,
 				FF418B592989AF3300828CD3 /* CustomTextFieldWithWrapperAround.swift in Sources */,
 				FF418B652989C20300828CD3 /* TextField-Secure.swift in Sources */,

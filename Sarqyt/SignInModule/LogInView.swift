@@ -13,7 +13,7 @@ struct LogInView: View {
     @State private var password = ""
     @State private var checked = false
     @State private var isPasswordHidden = true
-    @FocusState private var inFocus: Field?
+    @FocusState private var inFocus: RegistrationField?
     @State private var showingAlert = false
     var body: some View {
         ScrollView(.vertical, showsIndicators: false){
@@ -25,9 +25,10 @@ struct LogInView: View {
                 TextField("Email", text: $email, onCommit: {
                     inFocus = .securedPassword
                 })
-                    .focused($inFocus, equals: .email)
-                    .submitLabel(.next)
-                    .padding()
+                .textInputAutocapitalization(.never)
+                .focused($inFocus, equals: .email)
+                .submitLabel(.next)
+                .padding()
             }
             .customTextField()
             
@@ -35,10 +36,10 @@ struct LogInView: View {
             HStack{
                 Image(systemName: "lock.fill")
                     .foregroundColor(.secondary)
-                SecureTextfField(password: $password, isHidden: $isPasswordHidden, secureInFocus: $inFocus){
+                SecurePassword(password: $password, isHidden: $isPasswordHidden, secureInFocus: $inFocus){
                     credentialsEntered()
                 }
-                    .padding()
+                .padding()
                 Button{
                     isPasswordHidden.toggle()
                 } label: {
@@ -86,7 +87,8 @@ struct LogInView: View {
                 Text("Don't have an account?")
                     .foregroundColor(.secondary)
                 NavigationLink{
-                    Text("Create an account")
+                    SignUpView()
+                        .navigationTitle("Sign Up")
                 }label: {
                     Text("Sign Up")
                         .foregroundColor(.green)
@@ -99,10 +101,6 @@ struct LogInView: View {
         }message: {
             Text("Email or password has not been provided. Please make sure that all fields are properly formed.")
         }
-    }
-    
-    enum Field: Hashable{
-        case email, securedPassword, revealedPassword
     }
     
     func credentialsEntered() {

@@ -12,7 +12,7 @@ struct CustomTextFieldWithWrapperAround: ViewModifier{
     func body(content: Content) -> some View {
         content
             .padding(.horizontal)
-            .background(colorScheme == .dark ? Color.gray.opacity(0.15) : Color.gray.opacity(0.17))
+            .background(colorScheme == .dark ? Color.gray.opacity(0.15) : Color.gray.opacity(0.15))
             .clipShape(RoundedRectangle(cornerRadius: 5))
     }
 }
