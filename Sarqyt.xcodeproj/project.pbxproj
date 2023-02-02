@@ -26,6 +26,8 @@
 		FFA4AD6E298BCE8500F3A950 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD6D298BCE8500F3A950 /* ProfileImageView.swift */; };
 		FFA4AD70298BCEBA00F3A950 /* DropDownGnederPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD6F298BCEBA00F3A950 /* DropDownGnederPickerView.swift */; };
 		FFA4AD72298BD3B400F3A950 /* TakeImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD71298BD3B400F3A950 /* TakeImageService.swift */; };
+		FFA4AD77298BE4AC00F3A950 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD76298BE4AC00F3A950 /* SignUpView.swift */; };
+		FFA4AD7A298BE5B800F3A950 /* CardLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD79298BE5B800F3A950 /* CardLogoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		FFA4AD6D298BCE8500F3A950 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 		FFA4AD6F298BCEBA00F3A950 /* DropDownGnederPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownGnederPickerView.swift; sourceTree = "<group>"; };
 		FFA4AD71298BD3B400F3A950 /* TakeImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeImageService.swift; sourceTree = "<group>"; };
+		FFA4AD76298BE4AC00F3A950 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		FFA4AD79298BE5B800F3A950 /* CardLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLogoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FF418B53298998D400828CD3 /* Registration View */ = {
+		FF418B53298998D400828CD3 /* SignInModule */ = {
 			isa = PBXGroup;
 			children = (
+				FFA4AD78298BE59E00F3A950 /* CustomView */,
 				FF418B5429899AAE00828CD3 /* LogInView.swift */,
 				FF418B5129898CC000828CD3 /* SignInView.swift */,
 			);
-			path = "Registration View";
+			path = SignInModule;
 			sourceTree = "<group>";
 		};
 		FF418B5A2989AFDC00828CD3 /* Extension */ = {
@@ -117,7 +122,7 @@
 				FFA4AD67298BBA7500F3A950 /* PhotoService */,
 				FF418B5A2989AFDC00828CD3 /* Extension */,
 				FF418B5F2989B11F00828CD3 /* Custom View */,
-				FF418B53298998D400828CD3 /* Registration View */,
+				FF418B53298998D400828CD3 /* SignInModule */,
 				FF495579298805AB0009B7C4 /* Assets.xcassets */,
 				FF49557B298805AB0009B7C4 /* Preview Content */,
 			);
@@ -144,6 +149,7 @@
 		FFA4AD6A298BCE0800F3A950 /* RegistrationModule */ = {
 			isa = PBXGroup;
 			children = (
+				FFA4AD75298BE47F00F3A950 /* SignUpView */,
 				FFA4AD6C298BCE3200F3A950 /* CustomView */,
 				FFA4AD6B298BCE2500F3A950 /* RegistrationView */,
 			);
@@ -164,6 +170,22 @@
 				FF463F49298ABA8F000A6723 /* DatePickerView.swift */,
 				FFA4AD6D298BCE8500F3A950 /* ProfileImageView.swift */,
 				FFA4AD6F298BCEBA00F3A950 /* DropDownGnederPickerView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		FFA4AD75298BE47F00F3A950 /* SignUpView */ = {
+			isa = PBXGroup;
+			children = (
+				FFA4AD76298BE4AC00F3A950 /* SignUpView.swift */,
+			);
+			path = SignUpView;
+			sourceTree = "<group>";
+		};
+		FFA4AD78298BE59E00F3A950 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				FFA4AD79298BE5B800F3A950 /* CardLogoView.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -258,7 +280,9 @@
 				FF418B5E2989B0C800828CD3 /* PrimaryButton.swift in Sources */,
 				FFA4AD6E298BCE8500F3A950 /* ProfileImageView.swift in Sources */,
 				FF418B5529899AAE00828CD3 /* LogInView.swift in Sources */,
+				FFA4AD77298BE4AC00F3A950 /* SignUpView.swift in Sources */,
 				FF495576298805A90009B7C4 /* SarqytApp.swift in Sources */,
+				FFA4AD7A298BE5B800F3A950 /* CardLogoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

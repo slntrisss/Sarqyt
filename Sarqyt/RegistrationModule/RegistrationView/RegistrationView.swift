@@ -26,22 +26,20 @@ struct RegistrationView: View {
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false){
-            ZStack{
-                ProfileImageView(image: selectedImage)
-                    .onTapGesture {
-                        showingDialog = true
-                    }
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(.green)
-                            .frame(width: 30, height: 30)
-                            .overlay(
-                                Image(systemName: "square.and.pencil")
-                                    .font(.body.weight(.heavy))
-                                    .foregroundColor(.white)
-                            ),
-                        alignment: .bottomTrailing)
-            }
+            ProfileImageView(image: selectedImage)
+                .onTapGesture {
+                    showingDialog = true
+                }
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(.green)
+                        .frame(width: 30, height: 30)
+                        .overlay(
+                            Image(systemName: "square.and.pencil")
+                                .font(.body.weight(.heavy))
+                                .foregroundColor(.white)
+                        ),
+                    alignment: .bottomTrailing)
             
             VStack(spacing: 20){
                 TextField("Firstname", text: $firstname, onCommit: {
