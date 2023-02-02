@@ -69,7 +69,7 @@ struct LogInView: View {
             }
             .customTextField()
             
-            //TextField for email
+            //TextField for password
             HStack{
                 Image(systemName: "lock.fill")
                     .foregroundColor(.secondary)
@@ -101,7 +101,9 @@ struct LogInView: View {
             NavigationLink{
                 Text("Logged in")
             }label: {
-                PrimaryButton(buttonLabel: "Sign In")
+                PrimaryButton(buttonLabel: "Sign In"){
+                    print("Sign in button clicked.")
+                }
             }
             .padding(.vertical)
             

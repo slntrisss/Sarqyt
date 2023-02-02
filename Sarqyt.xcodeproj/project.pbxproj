@@ -15,10 +15,17 @@
 		FF418B612989B17F00828CD3 /* LineBreakerWithText.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B602989B17F00828CD3 /* LineBreakerWithText.swift */; };
 		FF418B632989B9CD00828CD3 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B622989B9CD00828CD3 /* SecureTextField.swift */; };
 		FF418B652989C20300828CD3 /* TextField-Secure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B642989C20300828CD3 /* TextField-Secure.swift */; };
+		FF463F4A298ABA8F000A6723 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF463F49298ABA8F000A6723 /* DatePickerView.swift */; };
+		FF463F4F298AC824000A6723 /* String-PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF463F4E298AC824000A6723 /* String-PhoneNumber.swift */; };
 		FF495576298805A90009B7C4 /* SarqytApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF495575298805A90009B7C4 /* SarqytApp.swift */; };
 		FF495578298805A90009B7C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF495577298805A90009B7C4 /* ContentView.swift */; };
 		FF49557A298805AB0009B7C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF495579298805AB0009B7C4 /* Assets.xcassets */; };
 		FF49557D298805AB0009B7C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF49557C298805AB0009B7C4 /* Preview Assets.xcassets */; };
+		FF4DA7B7298A68E800A3A92A /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4DA7B6298A68E800A3A92A /* RegistrationView.swift */; };
+		FFA4AD69298BBAC900F3A950 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD68298BBAC900F3A950 /* ImagePicker.swift */; };
+		FFA4AD6E298BCE8500F3A950 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD6D298BCE8500F3A950 /* ProfileImageView.swift */; };
+		FFA4AD70298BCEBA00F3A950 /* DropDownGnederPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD6F298BCEBA00F3A950 /* DropDownGnederPickerView.swift */; };
+		FFA4AD72298BD3B400F3A950 /* TakeImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD71298BD3B400F3A950 /* TakeImageService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,11 +37,18 @@
 		FF418B602989B17F00828CD3 /* LineBreakerWithText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineBreakerWithText.swift; sourceTree = "<group>"; };
 		FF418B622989B9CD00828CD3 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
 		FF418B642989C20300828CD3 /* TextField-Secure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField-Secure.swift"; sourceTree = "<group>"; };
+		FF463F49298ABA8F000A6723 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
+		FF463F4E298AC824000A6723 /* String-PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-PhoneNumber.swift"; sourceTree = "<group>"; };
 		FF495572298805A90009B7C4 /* Sarqyt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sarqyt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF495575298805A90009B7C4 /* SarqytApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SarqytApp.swift; sourceTree = "<group>"; };
 		FF495577298805A90009B7C4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FF495579298805AB0009B7C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF49557C298805AB0009B7C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF4DA7B6298A68E800A3A92A /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		FFA4AD68298BBAC900F3A950 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		FFA4AD6D298BCE8500F3A950 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
+		FFA4AD6F298BCEBA00F3A950 /* DropDownGnederPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownGnederPickerView.swift; sourceTree = "<group>"; };
+		FFA4AD71298BD3B400F3A950 /* TakeImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeImageService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +77,7 @@
 				FF418B562989AC9000828CD3 /* Toggle-Checkbox.swift */,
 				FF418B582989AF3300828CD3 /* CustomTextFieldWithWrapperAround.swift */,
 				FF418B642989C20300828CD3 /* TextField-Secure.swift */,
+				FF463F4E298AC824000A6723 /* String-PhoneNumber.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -98,6 +113,8 @@
 			children = (
 				FF495575298805A90009B7C4 /* SarqytApp.swift */,
 				FF495577298805A90009B7C4 /* ContentView.swift */,
+				FFA4AD6A298BCE0800F3A950 /* RegistrationModule */,
+				FFA4AD67298BBA7500F3A950 /* PhotoService */,
 				FF418B5A2989AFDC00828CD3 /* Extension */,
 				FF418B5F2989B11F00828CD3 /* Custom View */,
 				FF418B53298998D400828CD3 /* Registration View */,
@@ -113,6 +130,42 @@
 				FF49557C298805AB0009B7C4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FFA4AD67298BBA7500F3A950 /* PhotoService */ = {
+			isa = PBXGroup;
+			children = (
+				FFA4AD68298BBAC900F3A950 /* ImagePicker.swift */,
+				FFA4AD71298BD3B400F3A950 /* TakeImageService.swift */,
+			);
+			path = PhotoService;
+			sourceTree = "<group>";
+		};
+		FFA4AD6A298BCE0800F3A950 /* RegistrationModule */ = {
+			isa = PBXGroup;
+			children = (
+				FFA4AD6C298BCE3200F3A950 /* CustomView */,
+				FFA4AD6B298BCE2500F3A950 /* RegistrationView */,
+			);
+			path = RegistrationModule;
+			sourceTree = "<group>";
+		};
+		FFA4AD6B298BCE2500F3A950 /* RegistrationView */ = {
+			isa = PBXGroup;
+			children = (
+				FF4DA7B6298A68E800A3A92A /* RegistrationView.swift */,
+			);
+			path = RegistrationView;
+			sourceTree = "<group>";
+		};
+		FFA4AD6C298BCE3200F3A950 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				FF463F49298ABA8F000A6723 /* DatePickerView.swift */,
+				FFA4AD6D298BCE8500F3A950 /* ProfileImageView.swift */,
+				FFA4AD6F298BCEBA00F3A950 /* DropDownGnederPickerView.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +184,8 @@
 			dependencies = (
 			);
 			name = Sarqyt;
+			packageProductDependencies = (
+			);
 			productName = Sarqyt;
 			productReference = FF495572298805A90009B7C4 /* Sarqyt.app */;
 			productType = "com.apple.product-type.application";
@@ -159,6 +214,8 @@
 				Base,
 			);
 			mainGroup = FF495569298805A90009B7C4;
+			packageReferences = (
+			);
 			productRefGroup = FF495573298805A90009B7C4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -185,14 +242,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF4DA7B7298A68E800A3A92A /* RegistrationView.swift in Sources */,
 				FF418B5229898CC000828CD3 /* SignInView.swift in Sources */,
 				FF418B612989B17F00828CD3 /* LineBreakerWithText.swift in Sources */,
+				FFA4AD72298BD3B400F3A950 /* TakeImageService.swift in Sources */,
+				FFA4AD69298BBAC900F3A950 /* ImagePicker.swift in Sources */,
+				FFA4AD70298BCEBA00F3A950 /* DropDownGnederPickerView.swift in Sources */,
 				FF495578298805A90009B7C4 /* ContentView.swift in Sources */,
 				FF418B632989B9CD00828CD3 /* SecureTextField.swift in Sources */,
+				FF463F4F298AC824000A6723 /* String-PhoneNumber.swift in Sources */,
 				FF418B572989AC9000828CD3 /* Toggle-Checkbox.swift in Sources */,
+				FF463F4A298ABA8F000A6723 /* DatePickerView.swift in Sources */,
 				FF418B592989AF3300828CD3 /* CustomTextFieldWithWrapperAround.swift in Sources */,
 				FF418B652989C20300828CD3 /* TextField-Secure.swift in Sources */,
 				FF418B5E2989B0C800828CD3 /* PrimaryButton.swift in Sources */,
+				FFA4AD6E298BCE8500F3A950 /* ProfileImageView.swift in Sources */,
 				FF418B5529899AAE00828CD3 /* LogInView.swift in Sources */,
 				FF495576298805A90009B7C4 /* SarqytApp.swift in Sources */,
 			);
@@ -326,6 +390,8 @@
 				DEVELOPMENT_TEAM = 3RYA52PLG7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Sarqyt needs access to your camera to take a profile picture.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Sarqyt needs access to your photo library to choose a profile picture.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -355,6 +421,8 @@
 				DEVELOPMENT_TEAM = 3RYA52PLG7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Sarqyt needs access to your camera to take a profile picture.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Sarqyt needs access to your photo library to choose a profile picture.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

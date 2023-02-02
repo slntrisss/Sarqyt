@@ -71,15 +71,19 @@ struct SignInView: View {
             HStack{
                 Text("Don't have an account?")
                     .foregroundColor(.secondary)
-                Button("Sign Up"){}
-                    .foregroundColor(.green)
+                NavigationLink{
+                    RegistrationView()
+                } label: {
+                    Text("Sign Up")
+                        .foregroundColor(.green)
+                }
             }
         }
         .padding()
     }
 }
 
-struct RegistrationView_Previews: PreviewProvider {
+struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
         SignInView()
     }
