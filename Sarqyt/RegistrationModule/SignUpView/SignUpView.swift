@@ -34,7 +34,7 @@ struct SignUpView: View {
                 Image(systemName: "lock.fill")
                     .foregroundColor(.secondary)
                 SecurePassword(password: $password, isHidden: $isPasswordHidden, secureInFocus: $inFocus){
-                    
+                    inFocus = .securedConfirmationPassword
                 }
                 .padding()
                 Button{
@@ -50,8 +50,8 @@ struct SignUpView: View {
             HStack{
                 Image(systemName: "lock.fill")
                     .foregroundColor(.secondary)
-                ConfirmationPasswordField(password: $password, isHidden: $isPasswordHidden, secureInFocus: $inFocus){
-                    
+                ConfirmationPasswordField(password: $confirmationPassword, isHidden: $isPasswordHidden, secureInFocus: $inFocus){
+                    inFocus = nil
                 }
                 .padding()
             }

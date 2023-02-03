@@ -15,6 +15,8 @@
 		FF418B612989B17F00828CD3 /* LineBreakerWithText.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B602989B17F00828CD3 /* LineBreakerWithText.swift */; };
 		FF418B632989B9CD00828CD3 /* SecurePassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B622989B9CD00828CD3 /* SecurePassword.swift */; };
 		FF418B652989C20300828CD3 /* TextField-Secure.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B642989C20300828CD3 /* TextField-Secure.swift */; };
+		FF43C472298CE8DC00FCCC8C /* ForgotPasswordCodeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF43C471298CE8DC00FCCC8C /* ForgotPasswordCodeVerificationView.swift */; };
+		FF43C474298D1A2400FCCC8C /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF43C473298D1A2400FCCC8C /* ChangePasswordView.swift */; };
 		FF463F4A298ABA8F000A6723 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF463F49298ABA8F000A6723 /* DatePickerView.swift */; };
 		FF463F4F298AC824000A6723 /* String-PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF463F4E298AC824000A6723 /* String-PhoneNumber.swift */; };
 		FF495576298805A90009B7C4 /* SarqytApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF495575298805A90009B7C4 /* SarqytApp.swift */; };
@@ -30,6 +32,7 @@
 		FFA4AD7A298BE5B800F3A950 /* CardLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD79298BE5B800F3A950 /* CardLogoView.swift */; };
 		FFA4AD7D298BF4C600F3A950 /* ConfirmationPasswordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD7C298BF4C600F3A950 /* ConfirmationPasswordField.swift */; };
 		FFA4AD80298BF51500F3A950 /* RegistrationField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD7F298BF51500F3A950 /* RegistrationField.swift */; };
+		FFA4AD83298C0A2E00F3A950 /* ForgotPasswordMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD82298C0A2E00F3A950 /* ForgotPasswordMainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,8 @@
 		FF418B602989B17F00828CD3 /* LineBreakerWithText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineBreakerWithText.swift; sourceTree = "<group>"; };
 		FF418B622989B9CD00828CD3 /* SecurePassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurePassword.swift; sourceTree = "<group>"; };
 		FF418B642989C20300828CD3 /* TextField-Secure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextField-Secure.swift"; sourceTree = "<group>"; };
+		FF43C471298CE8DC00FCCC8C /* ForgotPasswordCodeVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordCodeVerificationView.swift; sourceTree = "<group>"; };
+		FF43C473298D1A2400FCCC8C /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
 		FF463F49298ABA8F000A6723 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 		FF463F4E298AC824000A6723 /* String-PhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-PhoneNumber.swift"; sourceTree = "<group>"; };
 		FF495572298805A90009B7C4 /* Sarqyt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sarqyt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +62,7 @@
 		FFA4AD79298BE5B800F3A950 /* CardLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardLogoView.swift; sourceTree = "<group>"; };
 		FFA4AD7C298BF4C600F3A950 /* ConfirmationPasswordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationPasswordField.swift; sourceTree = "<group>"; };
 		FFA4AD7F298BF51500F3A950 /* RegistrationField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationField.swift; sourceTree = "<group>"; };
+		FFA4AD82298C0A2E00F3A950 /* ForgotPasswordMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordMainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +127,7 @@
 			children = (
 				FF495575298805A90009B7C4 /* SarqytApp.swift */,
 				FF495577298805A90009B7C4 /* ContentView.swift */,
+				FFA4AD81298C0A0A00F3A950 /* ForgetPasswordModule */,
 				FF418B5A2989AFDC00828CD3 /* Extension */,
 				FFA4AD7B298BE64F00F3A950 /* Service */,
 				FFA4AD6A298BCE0800F3A950 /* RegistrationModule */,
@@ -212,6 +219,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		FFA4AD81298C0A0A00F3A950 /* ForgetPasswordModule */ = {
+			isa = PBXGroup;
+			children = (
+				FFA4AD82298C0A2E00F3A950 /* ForgotPasswordMainView.swift */,
+				FF43C471298CE8DC00FCCC8C /* ForgotPasswordCodeVerificationView.swift */,
+				FF43C473298D1A2400FCCC8C /* ChangePasswordView.swift */,
+			);
+			path = ForgetPasswordModule;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -293,6 +310,9 @@
 				FFA4AD69298BBAC900F3A950 /* ImagePicker.swift in Sources */,
 				FFA4AD70298BCEBA00F3A950 /* DropDownGnederPickerView.swift in Sources */,
 				FFA4AD7D298BF4C600F3A950 /* ConfirmationPasswordField.swift in Sources */,
+				FF43C474298D1A2400FCCC8C /* ChangePasswordView.swift in Sources */,
+				FFA4AD83298C0A2E00F3A950 /* ForgotPasswordMainView.swift in Sources */,
+				FF43C472298CE8DC00FCCC8C /* ForgotPasswordCodeVerificationView.swift in Sources */,
 				FF495578298805A90009B7C4 /* ContentView.swift in Sources */,
 				FF418B632989B9CD00828CD3 /* SecurePassword.swift in Sources */,
 				FF463F4F298AC824000A6723 /* String-PhoneNumber.swift in Sources */,

@@ -70,8 +70,8 @@ struct LogInView: View {
             }
             .padding(.vertical)
             
-            Button{
-                print("Forgot password button is clicked")
+            NavigationLink{
+                ForgotPasswordMainView()
             }label: {
                 Text("Forgot password?")
                     .foregroundColor(.green)

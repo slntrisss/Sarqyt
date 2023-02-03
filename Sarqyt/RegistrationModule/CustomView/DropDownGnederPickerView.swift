@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct DropDownGenderPickerView: View{
+    @Environment(\.colorScheme) var colorScheme
     @State private var isExpanded = false
     @Binding var selectedGender: String
     @State private var selected = false
@@ -27,7 +28,7 @@ struct DropDownGenderPickerView: View{
                     }
             }
         }
-        .tint(selected ? .black : .gray.opacity(0.7))
+        .tint(selected ? (colorScheme == .dark ? Color.white : Color.black) : .gray.opacity(0.7))
         .padding()
         .customTextField()
     }

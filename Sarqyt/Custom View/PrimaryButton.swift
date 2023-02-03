@@ -11,12 +11,14 @@ struct PrimaryButton: View{
     let buttonLabel: String
     var completionHandler: () -> ()
     var body: some View{
-        Button(buttonLabel){
+        Button{
             completionHandler()
+        }label: {
+            Text(buttonLabel)
+                .foregroundColor(.white)
+                .padding()
+                .frame(maxWidth: .infinity)
         }
-        .foregroundColor(.white)
-        .padding()
-        .frame(maxWidth: .infinity)
         .background(.green)
         .clipShape(RoundedRectangle(cornerRadius: 20))
         .shadow(color: .gray, radius: 5, x: 0, y: 1)
