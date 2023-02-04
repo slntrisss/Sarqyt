@@ -10,8 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView{
-            SignInView()
-                .navigationTitle("Sign In")
+            MainView()
         }
         .navigationViewStyle(.stack)
     }

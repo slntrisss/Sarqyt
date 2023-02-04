@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF3F4F37298E282A00FD56A1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3F4F36298E282A00FD56A1 /* HomeView.swift */; };
+		FF3F4F3A298E28AD00FD56A1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3F4F39298E28AD00FD56A1 /* MainView.swift */; };
+		FF3F4F3F298E293100FD56A1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3F4F3E298E293100FD56A1 /* ProfileView.swift */; };
+		FF3F4F41298E294F00FD56A1 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3F4F40298E294F00FD56A1 /* SearchView.swift */; };
+		FF3F4F43298E295900FD56A1 /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3F4F42298E295900FD56A1 /* BookingView.swift */; };
 		FF418B5229898CC000828CD3 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B5129898CC000828CD3 /* SignInView.swift */; };
 		FF418B5529899AAE00828CD3 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B5429899AAE00828CD3 /* LogInView.swift */; };
 		FF418B572989AC9000828CD3 /* Toggle-Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF418B562989AC9000828CD3 /* Toggle-Checkbox.swift */; };
@@ -36,6 +41,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF3F4F36298E282A00FD56A1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FF3F4F39298E28AD00FD56A1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FF3F4F3E298E293100FD56A1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		FF3F4F40298E294F00FD56A1 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		FF3F4F42298E295900FD56A1 /* BookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
 		FF418B5129898CC000828CD3 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		FF418B5429899AAE00828CD3 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		FF418B562989AC9000828CD3 /* Toggle-Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Toggle-Checkbox.swift"; sourceTree = "<group>"; };
@@ -76,6 +86,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF3F4F35298E281B00FD56A1 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				FF3F4F36298E282A00FD56A1 /* HomeView.swift */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		FF3F4F38298E287C00FD56A1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FF3F4F39298E28AD00FD56A1 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FF3F4F3B298E28CE00FD56A1 /* SearchModule */ = {
+			isa = PBXGroup;
+			children = (
+				FF3F4F40298E294F00FD56A1 /* SearchView.swift */,
+			);
+			path = SearchModule;
+			sourceTree = "<group>";
+		};
+		FF3F4F3C298E28E200FD56A1 /* BookingModule */ = {
+			isa = PBXGroup;
+			children = (
+				FF3F4F42298E295900FD56A1 /* BookingView.swift */,
+			);
+			path = BookingModule;
+			sourceTree = "<group>";
+		};
+		FF3F4F3D298E28ED00FD56A1 /* ProfileModule */ = {
+			isa = PBXGroup;
+			children = (
+				FF3F4F3E298E293100FD56A1 /* ProfileView.swift */,
+			);
+			path = ProfileModule;
+			sourceTree = "<group>";
+		};
 		FF418B53298998D400828CD3 /* SignInModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +177,11 @@
 			children = (
 				FF495575298805A90009B7C4 /* SarqytApp.swift */,
 				FF495577298805A90009B7C4 /* ContentView.swift */,
+				FF3F4F38298E287C00FD56A1 /* Main */,
+				FF3F4F3C298E28E200FD56A1 /* BookingModule */,
+				FF3F4F3B298E28CE00FD56A1 /* SearchModule */,
+				FF3F4F3D298E28ED00FD56A1 /* ProfileModule */,
+				FF3F4F35298E281B00FD56A1 /* HomeModule */,
 				FFA4AD81298C0A0A00F3A950 /* ForgetPasswordModule */,
 				FF418B5A2989AFDC00828CD3 /* Extension */,
 				FFA4AD7B298BE64F00F3A950 /* Service */,
@@ -304,8 +359,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF4DA7B7298A68E800A3A92A /* RegistrationView.swift in Sources */,
+				FF3F4F3F298E293100FD56A1 /* ProfileView.swift in Sources */,
+				FF3F4F3A298E28AD00FD56A1 /* MainView.swift in Sources */,
 				FF418B5229898CC000828CD3 /* SignInView.swift in Sources */,
 				FF418B612989B17F00828CD3 /* LineBreakerWithText.swift in Sources */,
+				FF3F4F37298E282A00FD56A1 /* HomeView.swift in Sources */,
 				FFA4AD72298BD3B400F3A950 /* TakeImageService.swift in Sources */,
 				FFA4AD69298BBAC900F3A950 /* ImagePicker.swift in Sources */,
 				FFA4AD70298BCEBA00F3A950 /* DropDownGnederPickerView.swift in Sources */,
@@ -315,6 +373,7 @@
 				FF43C472298CE8DC00FCCC8C /* ForgotPasswordCodeVerificationView.swift in Sources */,
 				FF495578298805A90009B7C4 /* ContentView.swift in Sources */,
 				FF418B632989B9CD00828CD3 /* SecurePassword.swift in Sources */,
+				FF3F4F43298E295900FD56A1 /* BookingView.swift in Sources */,
 				FF463F4F298AC824000A6723 /* String-PhoneNumber.swift in Sources */,
 				FF418B572989AC9000828CD3 /* Toggle-Checkbox.swift in Sources */,
 				FFA4AD80298BF51500F3A950 /* RegistrationField.swift in Sources */,
@@ -324,6 +383,7 @@
 				FF418B5E2989B0C800828CD3 /* PrimaryButton.swift in Sources */,
 				FFA4AD6E298BCE8500F3A950 /* ProfileImageView.swift in Sources */,
 				FF418B5529899AAE00828CD3 /* LogInView.swift in Sources */,
+				FF3F4F41298E294F00FD56A1 /* SearchView.swift in Sources */,
 				FFA4AD77298BE4AC00F3A950 /* SignUpView.swift in Sources */,
 				FF495576298805A90009B7C4 /* SarqytApp.swift in Sources */,
 				FFA4AD7A298BE5B800F3A950 /* CardLogoView.swift in Sources */,
