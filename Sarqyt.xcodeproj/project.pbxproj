@@ -29,6 +29,14 @@
 		FF49557A298805AB0009B7C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF495579298805AB0009B7C4 /* Assets.xcassets */; };
 		FF49557D298805AB0009B7C4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF49557C298805AB0009B7C4 /* Preview Assets.xcassets */; };
 		FF4DA7B7298A68E800A3A92A /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4DA7B6298A68E800A3A92A /* RegistrationView.swift */; };
+		FF5FE97C2990E01100CD6DF2 /* AlignmentGuide+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5FE97B2990E01100CD6DF2 /* AlignmentGuide+Center.swift */; };
+		FF5FE97E2990E44F00CD6DF2 /* RestaurantCardInListModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5FE97D2990E44F00CD6DF2 /* RestaurantCardInListModeView.swift */; };
+		FF5FE9812990E4CB00CD6DF2 /* RecentlyBookedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5FE9802990E4CB00CD6DF2 /* RecentlyBookedView.swift */; };
+		FF5FE9832991029800CD6DF2 /* RestaurantCardInGridModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5FE9822991029800CD6DF2 /* RestaurantCardInGridModeView.swift */; };
+		FF5FE9882991073900CD6DF2 /* ListOrGridMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5FE9872991073900CD6DF2 /* ListOrGridMode.swift */; };
+		FF5FE98B29910B4000CD6DF2 /* RemoveFromBookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5FE98A29910B4000CD6DF2 /* RemoveFromBookmarkView.swift */; };
+		FF5FE98D2991184200CD6DF2 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5FE98C2991184200CD6DF2 /* Color+Hex.swift */; };
+		FF5FE98F29912B9B00CD6DF2 /* Notification+Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5FE98E29912B9B00CD6DF2 /* Notification+Bookmark.swift */; };
 		FFA4AD69298BBAC900F3A950 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD68298BBAC900F3A950 /* ImagePicker.swift */; };
 		FFA4AD6E298BCE8500F3A950 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD6D298BCE8500F3A950 /* ProfileImageView.swift */; };
 		FFA4AD70298BCEBA00F3A950 /* DropDownGnederPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD6F298BCEBA00F3A950 /* DropDownGnederPickerView.swift */; };
@@ -64,6 +72,14 @@
 		FF495579298805AB0009B7C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF49557C298805AB0009B7C4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF4DA7B6298A68E800A3A92A /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		FF5FE97B2990E01100CD6DF2 /* AlignmentGuide+Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlignmentGuide+Center.swift"; sourceTree = "<group>"; };
+		FF5FE97D2990E44F00CD6DF2 /* RestaurantCardInListModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCardInListModeView.swift; sourceTree = "<group>"; };
+		FF5FE9802990E4CB00CD6DF2 /* RecentlyBookedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentlyBookedView.swift; sourceTree = "<group>"; };
+		FF5FE9822991029800CD6DF2 /* RestaurantCardInGridModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCardInGridModeView.swift; sourceTree = "<group>"; };
+		FF5FE9872991073900CD6DF2 /* ListOrGridMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrGridMode.swift; sourceTree = "<group>"; };
+		FF5FE98A29910B4000CD6DF2 /* RemoveFromBookmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveFromBookmarkView.swift; sourceTree = "<group>"; };
+		FF5FE98C2991184200CD6DF2 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		FF5FE98E29912B9B00CD6DF2 /* Notification+Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Bookmark.swift"; sourceTree = "<group>"; };
 		FFA4AD68298BBAC900F3A950 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		FFA4AD6D298BCE8500F3A950 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 		FFA4AD6F298BCEBA00F3A950 /* DropDownGnederPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownGnederPickerView.swift; sourceTree = "<group>"; };
@@ -86,12 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FF3F4F35298E281B00FD56A1 /* HomeModule */ = {
+		FF3F4F35298E281B00FD56A1 /* MainModule */ = {
 			isa = PBXGroup;
 			children = (
-				FF3F4F36298E282A00FD56A1 /* HomeView.swift */,
+				FF5FE9892991074100CD6DF2 /* CustomView */,
+				FF5FE97F2990E4A500CD6DF2 /* RecentrlyBookedModule */,
+				FF3F4F44298E387800FD56A1 /* HomeModule */,
 			);
-			path = HomeModule;
+			path = MainModule;
 			sourceTree = "<group>";
 		};
 		FF3F4F38298E287C00FD56A1 /* Main */ = {
@@ -126,6 +144,16 @@
 			path = ProfileModule;
 			sourceTree = "<group>";
 		};
+		FF3F4F44298E387800FD56A1 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				FF3F4F36298E282A00FD56A1 /* HomeView.swift */,
+				FF5FE97D2990E44F00CD6DF2 /* RestaurantCardInListModeView.swift */,
+				FF5FE9822991029800CD6DF2 /* RestaurantCardInGridModeView.swift */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
 		FF418B53298998D400828CD3 /* SignInModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +171,9 @@
 				FF418B582989AF3300828CD3 /* CustomTextFieldWithWrapperAround.swift */,
 				FF418B642989C20300828CD3 /* TextField-Secure.swift */,
 				FF463F4E298AC824000A6723 /* String-PhoneNumber.swift */,
+				FF5FE97B2990E01100CD6DF2 /* AlignmentGuide+Center.swift */,
+				FF5FE98C2991184200CD6DF2 /* Color+Hex.swift */,
+				FF5FE98E29912B9B00CD6DF2 /* Notification+Bookmark.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -178,10 +209,10 @@
 				FF495575298805A90009B7C4 /* SarqytApp.swift */,
 				FF495577298805A90009B7C4 /* ContentView.swift */,
 				FF3F4F38298E287C00FD56A1 /* Main */,
+				FF3F4F35298E281B00FD56A1 /* MainModule */,
 				FF3F4F3C298E28E200FD56A1 /* BookingModule */,
 				FF3F4F3B298E28CE00FD56A1 /* SearchModule */,
 				FF3F4F3D298E28ED00FD56A1 /* ProfileModule */,
-				FF3F4F35298E281B00FD56A1 /* HomeModule */,
 				FFA4AD81298C0A0A00F3A950 /* ForgetPasswordModule */,
 				FF418B5A2989AFDC00828CD3 /* Extension */,
 				FFA4AD7B298BE64F00F3A950 /* Service */,
@@ -200,6 +231,23 @@
 				FF49557C298805AB0009B7C4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF5FE97F2990E4A500CD6DF2 /* RecentrlyBookedModule */ = {
+			isa = PBXGroup;
+			children = (
+				FF5FE9802990E4CB00CD6DF2 /* RecentlyBookedView.swift */,
+				FF5FE98A29910B4000CD6DF2 /* RemoveFromBookmarkView.swift */,
+			);
+			path = RecentrlyBookedModule;
+			sourceTree = "<group>";
+		};
+		FF5FE9892991074100CD6DF2 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				FF5FE9872991073900CD6DF2 /* ListOrGridMode.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		FFA4AD67298BBA7500F3A950 /* PhotoService */ = {
@@ -358,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF5FE9832991029800CD6DF2 /* RestaurantCardInGridModeView.swift in Sources */,
 				FF4DA7B7298A68E800A3A92A /* RegistrationView.swift in Sources */,
 				FF3F4F3F298E293100FD56A1 /* ProfileView.swift in Sources */,
 				FF3F4F3A298E28AD00FD56A1 /* MainView.swift in Sources */,
@@ -366,17 +415,24 @@
 				FF3F4F37298E282A00FD56A1 /* HomeView.swift in Sources */,
 				FFA4AD72298BD3B400F3A950 /* TakeImageService.swift in Sources */,
 				FFA4AD69298BBAC900F3A950 /* ImagePicker.swift in Sources */,
+				FF5FE9812990E4CB00CD6DF2 /* RecentlyBookedView.swift in Sources */,
+				FF5FE9882991073900CD6DF2 /* ListOrGridMode.swift in Sources */,
 				FFA4AD70298BCEBA00F3A950 /* DropDownGnederPickerView.swift in Sources */,
 				FFA4AD7D298BF4C600F3A950 /* ConfirmationPasswordField.swift in Sources */,
 				FF43C474298D1A2400FCCC8C /* ChangePasswordView.swift in Sources */,
 				FFA4AD83298C0A2E00F3A950 /* ForgotPasswordMainView.swift in Sources */,
 				FF43C472298CE8DC00FCCC8C /* ForgotPasswordCodeVerificationView.swift in Sources */,
+				FF5FE97C2990E01100CD6DF2 /* AlignmentGuide+Center.swift in Sources */,
+				FF5FE98D2991184200CD6DF2 /* Color+Hex.swift in Sources */,
 				FF495578298805A90009B7C4 /* ContentView.swift in Sources */,
+				FF5FE98B29910B4000CD6DF2 /* RemoveFromBookmarkView.swift in Sources */,
 				FF418B632989B9CD00828CD3 /* SecurePassword.swift in Sources */,
+				FF5FE97E2990E44F00CD6DF2 /* RestaurantCardInListModeView.swift in Sources */,
 				FF3F4F43298E295900FD56A1 /* BookingView.swift in Sources */,
 				FF463F4F298AC824000A6723 /* String-PhoneNumber.swift in Sources */,
 				FF418B572989AC9000828CD3 /* Toggle-Checkbox.swift in Sources */,
 				FFA4AD80298BF51500F3A950 /* RegistrationField.swift in Sources */,
+				FF5FE98F29912B9B00CD6DF2 /* Notification+Bookmark.swift in Sources */,
 				FF463F4A298ABA8F000A6723 /* DatePickerView.swift in Sources */,
 				FF418B592989AF3300828CD3 /* CustomTextFieldWithWrapperAround.swift in Sources */,
 				FF418B652989C20300828CD3 /* TextField-Secure.swift in Sources */,
