@@ -13,6 +13,7 @@ struct HomeView: View {
     let categories = ["Recommended", "Trending", "Popular", "New", "High rated"]
     @State private var selectedCategories: [Bool] = [false, false, false, false, false]
     @State private var selectedCategoriIndex = -1
+    @State private var searchTextFieldTapped = false
     
     private var title = "Esmeralda de Hotel"
     private var location = "Paris/France"
@@ -20,7 +21,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView{
             ScrollView(.vertical, showsIndicators: false){
-                SearchTextFeld(searchQuery: $searchQuery)
+//                SearchTextFeld(searchQuery: $searchQuery, searchTextFieldTapped: $searchTextFieldTapped)
                 //Category collection view
                 CategoryCollectionView(categories: categories, selectedCategories: $selectedCategories, selectedCategoriIndex: $selectedCategoriIndex)
                 .padding(.vertical)

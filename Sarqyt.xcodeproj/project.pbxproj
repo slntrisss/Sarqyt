@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FF3D667E2992284B00FB35C1 /* SearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3D667D2992284B00FB35C1 /* SearchTextField.swift */; };
 		FF3D66822992298500FB35C1 /* CategoryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3D66812992298500FB35C1 /* CategoryCollectionView.swift */; };
+		FF3D6685299239C300FB35C1 /* SearchResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3D6684299239C300FB35C1 /* SearchResultsView.swift */; };
 		FF3F4F37298E282A00FD56A1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3F4F36298E282A00FD56A1 /* HomeView.swift */; };
 		FF3F4F3A298E28AD00FD56A1 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3F4F39298E28AD00FD56A1 /* MainView.swift */; };
 		FF3F4F3F298E293100FD56A1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3F4F3E298E293100FD56A1 /* ProfileView.swift */; };
@@ -53,6 +54,7 @@
 /* Begin PBXFileReference section */
 		FF3D667D2992284B00FB35C1 /* SearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTextField.swift; sourceTree = "<group>"; };
 		FF3D66812992298500FB35C1 /* CategoryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionView.swift; sourceTree = "<group>"; };
+		FF3D6684299239C300FB35C1 /* SearchResultsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsView.swift; sourceTree = "<group>"; };
 		FF3F4F36298E282A00FD56A1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FF3F4F39298E28AD00FD56A1 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FF3F4F3E298E293100FD56A1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -116,6 +118,14 @@
 			path = Registration;
 			sourceTree = "<group>";
 		};
+		FF3D66832992399600FB35C1 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				FF3D6684299239C300FB35C1 /* SearchResultsView.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		FF3F4F35298E281B00FD56A1 /* MainModule */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +147,7 @@
 		FF3F4F3B298E28CE00FD56A1 /* SearchModule */ = {
 			isa = PBXGroup;
 			children = (
+				FF3D66832992399600FB35C1 /* CustomView */,
 				FF3F4F40298E294F00FD56A1 /* SearchView.swift */,
 			);
 			path = SearchModule;
@@ -457,6 +468,7 @@
 				FF418B5529899AAE00828CD3 /* LogInView.swift in Sources */,
 				FF3F4F41298E294F00FD56A1 /* SearchView.swift in Sources */,
 				FFA4AD77298BE4AC00F3A950 /* SignUpView.swift in Sources */,
+				FF3D6685299239C300FB35C1 /* SearchResultsView.swift in Sources */,
 				FF495576298805A90009B7C4 /* SarqytApp.swift in Sources */,
 				FFA4AD7A298BE5B800F3A950 /* CardLogoView.swift in Sources */,
 			);
