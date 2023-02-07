@@ -20,48 +20,9 @@ struct HomeView: View {
     var body: some View {
         NavigationView{
             ScrollView(.vertical, showsIndicators: false){
-                HStack{
-                    Image(systemName: "magnifyingglass")
-                        .foregroundColor(.secondary)
-                    TextField("Search", text: $searchQuery)
-                        .padding()
-                    Button{
-                        print("filter button tapped.")
-                    }label: {
-                        Image(systemName: "slider.horizontal.3")
-                            .foregroundColor(.green)
-                    }
-                }
-                .customTextField()
-                .padding(.bottom)
-                
+                SearchTextFeld(searchQuery: $searchQuery)
                 //Category collection view
-                ScrollView(.horizontal, showsIndicators: false) {
-                    HStack{
-                        ForEach(0..<categories.count, id: \.self){index in
-                            Button{
-                                print("\(categories[index]) tapped.")
-                                if selectedCategoriIndex >= 0{
-                                    selectedCategories[selectedCategoriIndex] = false
-                                }
-                                selectedCategories[index] = true
-                                selectedCategoriIndex = index
-                            }label: {
-                                Text(categories[index])
-                                    .font(.body.weight(.medium))
-                                    .foregroundColor(selectedCategories[index] ? .white : .green)
-                                    .padding(.vertical, 10)
-                                    .padding(.horizontal)
-                                    .background(selectedCategories[index] ? .green : (colorScheme == .light ? .white : .black))
-                                    .overlay(
-                                        RoundedRectangle(cornerRadius: 20)
-                                            .strokeBorder(.green, lineWidth: 2)
-                                    )
-                                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                            }
-                        }
-                    }
-                }
+                CategoryCollectionView(categories: categories, selectedCategories: $selectedCategories, selectedCategoriIndex: $selectedCategoriIndex)
                 .padding(.vertical)
                 
                 //Restaurant images
