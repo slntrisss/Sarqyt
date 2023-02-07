@@ -15,10 +15,11 @@ struct SearchView: View {
     @State private var hotels = ["Palazzo Hotel", "Bulgari Hotel", "Amsterdam, Netherlands", "Martinez Channes Hotel", "Palms Casino Hotel", "London, UK", ]
     @State private var addresses = ["9613 Bellevue St.Athens, GA 30605", "940 N. Delaware Road Uniondale, NY 11553", "4 West Alton Avenue Torrance, CA 90505", "62 Shadow Brook Lane Fenton, MI 48430", "20 Bridgeton St.Thibodaux, LA 70301", "67 Thomas Bradenton, FL 34203"]
     @State private var searchTextFiledTapped = false
+    @State private var filterButtonTapped = false
     var body: some View {
         NavigationView{
             ScrollView(.vertical, showsIndicators: false){
-                SearchTextFeld(searchQuery: $searchQuery, searchTextFieldTapped: $searchTextFiledTapped)
+                SearchTextFeld(filterButtonTapped: $filterButtonTapped, searchQuery: $searchQuery, searchTextFieldTapped: $searchTextFiledTapped)
                 CategoryCollectionView(categories: categories, selectedCategories: $selectedCategories, selectedCategoriIndex: $selectedCategoryIndex)
                     .padding(.vertical)
                 if searchTextFiledTapped{
@@ -36,6 +37,11 @@ struct SearchView: View {
                 }
                 
             }
+            .sheet(isPresented: $filterButtonTapped, content: {
+                NavigationView{
+                    FilterView()
+                }
+            })
             .navigationTitle("Restaurant Search")
             .navigationBarTitleDisplayMode(.inline)
         }
@@ -47,5 +53,6 @@ struct SearchView: View {
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {
         SearchView()
+            .preferredColorScheme(.dark)
     }
 }

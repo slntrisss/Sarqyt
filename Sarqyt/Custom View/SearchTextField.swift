@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SearchTextFeld: View{
+    @Binding var filterButtonTapped: Bool
     @Binding var searchQuery: String
     @Binding var searchTextFieldTapped: Bool
     @FocusState private var inFocus: Bool
@@ -32,6 +33,7 @@ struct SearchTextFeld: View{
                 .padding()
             Button{
                 print("filter button tapped.")
+                filterButtonTapped = true
             }label: {
                 Image(systemName: "slider.horizontal.3")
                     .foregroundColor(.green)
