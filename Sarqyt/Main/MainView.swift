@@ -9,6 +9,9 @@ import SwiftUI
 
 struct MainView: View {
     @State private var showRemoveBookmarkView = false
+    init(){
+        UIScrollView.appearance().keyboardDismissMode = .onDrag
+    }
     var body: some View {
         ZStack{
             TabView{

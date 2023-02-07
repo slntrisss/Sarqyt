@@ -9,11 +9,17 @@ import SwiftUI
 
 struct SearchTextFeld: View{
     @Binding var searchQuery: String
+    @FocusState private var inFocus: Bool
     var body: some View{
         HStack{
-            Image(systemName: "magnifyingglass")
-                .foregroundColor(.secondary)
+            Button{
+                inFocus = true
+            }label: {
+                Image(systemName: "magnifyingglass")
+                    .foregroundColor(.secondary)
+            }
             TextField("Search", text: $searchQuery)
+                .focused($inFocus)
                 .padding()
             Button{
                 print("filter button tapped.")

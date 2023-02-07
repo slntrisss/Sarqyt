@@ -156,7 +156,7 @@ struct HomeView: View {
                 }
             }
             .navigationTitle("Hello, Raim 👋")
-            .padding()
+            .padding(.horizontal)
             
         }
         .navigationViewStyle(.stack)
