@@ -42,12 +42,12 @@ struct MainView: View {
                 showRemoveBookmarkView = true
                 print("show")
             }
-            .onReceive(NotificationCenter.default.publisher(for: Notification.CancelBookingButtonTapped)) { _ in
+            .onReceive(NotificationCenter.default.publisher(for: Notification.PopupCancelBookingButtonTapped)) { _ in
                 showCancelBookingView = true
                 print("Modal view pop up")
             }
             RemoveFromBookmarkView(showModalView: $showRemoveBookmarkView)
-            CancelBookingView(showModalView: $showCancelBookingView)
+            CancelBookingPopupView(showModalView: $showCancelBookingView)
         }
     }
 }

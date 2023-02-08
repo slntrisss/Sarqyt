@@ -55,7 +55,7 @@
 		FFEF767F2993A64D00D66DEC /* HistoryRestaurantCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEF767E2993A64D00D66DEC /* HistoryRestaurantCardView.swift */; };
 		FFEF76812993A8D300D66DEC /* HistoryRestaurantCardButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEF76802993A8D300D66DEC /* HistoryRestaurantCardButtons.swift */; };
 		FFEF76842993AB1100D66DEC /* ViewModifier+BookingHistoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEF76832993AB1100D66DEC /* ViewModifier+BookingHistoryCard.swift */; };
-		FFEF76862993AF0100D66DEC /* CancelBookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEF76852993AF0100D66DEC /* CancelBookingView.swift */; };
+		FFEF76862993AF0100D66DEC /* CancelBookingPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEF76852993AF0100D66DEC /* CancelBookingPopupView.swift */; };
 		FFEF76882993B0F800D66DEC /* PopUpViewActionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEF76872993B0F800D66DEC /* PopUpViewActionButtons.swift */; };
 		FFEF768A2993B89600D66DEC /* HistoryRestaurantCardDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEF76892993B89600D66DEC /* HistoryRestaurantCardDescriptionView.swift */; };
 /* End PBXBuildFile section */
@@ -110,7 +110,7 @@
 		FFEF767E2993A64D00D66DEC /* HistoryRestaurantCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRestaurantCardView.swift; sourceTree = "<group>"; };
 		FFEF76802993A8D300D66DEC /* HistoryRestaurantCardButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRestaurantCardButtons.swift; sourceTree = "<group>"; };
 		FFEF76832993AB1100D66DEC /* ViewModifier+BookingHistoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModifier+BookingHistoryCard.swift"; sourceTree = "<group>"; };
-		FFEF76852993AF0100D66DEC /* CancelBookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBookingView.swift; sourceTree = "<group>"; };
+		FFEF76852993AF0100D66DEC /* CancelBookingPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBookingPopupView.swift; sourceTree = "<group>"; };
 		FFEF76872993B0F800D66DEC /* PopUpViewActionButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewActionButtons.swift; sourceTree = "<group>"; };
 		FFEF76892993B89600D66DEC /* HistoryRestaurantCardDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRestaurantCardDescriptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,7 +179,7 @@
 				FFEF76822993AAEA00D66DEC /* ViewModifier */,
 				FFEF767B2993845400D66DEC /* CustomView */,
 				FF3F4F42298E295900FD56A1 /* BookingView.swift */,
-				FFEF76852993AF0100D66DEC /* CancelBookingView.swift */,
+				FFEF76852993AF0100D66DEC /* CancelBookingPopupView.swift */,
 			);
 			path = BookingModule;
 			sourceTree = "<group>";
@@ -520,7 +520,7 @@
 				FF3F4F41298E294F00FD56A1 /* SearchView.swift in Sources */,
 				FFA4AD77298BE4AC00F3A950 /* SignUpView.swift in Sources */,
 				FF3D6685299239C300FB35C1 /* SearchResultsView.swift in Sources */,
-				FFEF76862993AF0100D66DEC /* CancelBookingView.swift in Sources */,
+				FFEF76862993AF0100D66DEC /* CancelBookingPopupView.swift in Sources */,
 				FF495576298805A90009B7C4 /* SarqytApp.swift in Sources */,
 				FFA4AD7A298BE5B800F3A950 /* CardLogoView.swift in Sources */,
 			);

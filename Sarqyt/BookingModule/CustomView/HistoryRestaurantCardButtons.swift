@@ -12,7 +12,7 @@ struct HistoryRestaurantCardButtons: View{
         HStack{
             Button{
                 print("Cancel booking button tapped.")
-                NotificationCenter.default.post(name: Notification.CancelBookingButtonTapped, object: nil)
+                NotificationCenter.default.post(name: Notification.PopupCancelBookingButtonTapped, object: nil)
             }label: {
                 Text("Cancel Booking")
                     .font(.body.weight(.semibold))

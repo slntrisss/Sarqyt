@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CancelBookingView: View {
+struct CancelBookingPopupView: View {
     @Environment(\.colorScheme) var colorScheme
     @State private var currHeight: CGFloat = 320
     @Binding var showModalView: Bool
@@ -84,6 +84,6 @@ struct CancelBookingView: View {
 
 struct CancelBookingView_Previews: PreviewProvider {
     static var previews: some View {
-        CancelBookingView(showModalView: .constant(true))
+        CancelBookingPopupView(showModalView: .constant(true))
     }
 }
