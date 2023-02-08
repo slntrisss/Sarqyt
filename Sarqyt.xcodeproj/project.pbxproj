@@ -51,6 +51,10 @@
 		FFA4AD7D298BF4C600F3A950 /* ConfirmationPasswordField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD7C298BF4C600F3A950 /* ConfirmationPasswordField.swift */; };
 		FFA4AD80298BF51500F3A950 /* RegistrationField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD7F298BF51500F3A950 /* RegistrationField.swift */; };
 		FFA4AD83298C0A2E00F3A950 /* ForgotPasswordMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA4AD82298C0A2E00F3A950 /* ForgotPasswordMainView.swift */; };
+		FFEF767D2993846600D66DEC /* HistoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEF767C2993846600D66DEC /* HistoryButton.swift */; };
+		FFEF767F2993A64D00D66DEC /* HistoryRestaurantCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEF767E2993A64D00D66DEC /* HistoryRestaurantCardView.swift */; };
+		FFEF76812993A8D300D66DEC /* HistoryRestaurantCardButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEF76802993A8D300D66DEC /* HistoryRestaurantCardButtons.swift */; };
+		FFEF76842993AB1100D66DEC /* ViewModifier+BookingHistoryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEF76832993AB1100D66DEC /* ViewModifier+BookingHistoryCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +103,10 @@
 		FFA4AD7C298BF4C600F3A950 /* ConfirmationPasswordField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationPasswordField.swift; sourceTree = "<group>"; };
 		FFA4AD7F298BF51500F3A950 /* RegistrationField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationField.swift; sourceTree = "<group>"; };
 		FFA4AD82298C0A2E00F3A950 /* ForgotPasswordMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordMainView.swift; sourceTree = "<group>"; };
+		FFEF767C2993846600D66DEC /* HistoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryButton.swift; sourceTree = "<group>"; };
+		FFEF767E2993A64D00D66DEC /* HistoryRestaurantCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRestaurantCardView.swift; sourceTree = "<group>"; };
+		FFEF76802993A8D300D66DEC /* HistoryRestaurantCardButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRestaurantCardButtons.swift; sourceTree = "<group>"; };
+		FFEF76832993AB1100D66DEC /* ViewModifier+BookingHistoryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModifier+BookingHistoryCard.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +170,8 @@
 		FF3F4F3C298E28E200FD56A1 /* BookingModule */ = {
 			isa = PBXGroup;
 			children = (
+				FFEF76822993AAEA00D66DEC /* ViewModifier */,
+				FFEF767B2993845400D66DEC /* CustomView */,
 				FF3F4F42298E295900FD56A1 /* BookingView.swift */,
 			);
 			path = BookingModule;
@@ -363,6 +373,24 @@
 			path = ForgetPasswordModule;
 			sourceTree = "<group>";
 		};
+		FFEF767B2993845400D66DEC /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				FFEF767C2993846600D66DEC /* HistoryButton.swift */,
+				FFEF767E2993A64D00D66DEC /* HistoryRestaurantCardView.swift */,
+				FFEF76802993A8D300D66DEC /* HistoryRestaurantCardButtons.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		FFEF76822993AAEA00D66DEC /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				FFEF76832993AB1100D66DEC /* ViewModifier+BookingHistoryCard.swift */,
+			);
+			path = ViewModifier;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -443,10 +471,12 @@
 				FF3F4F3A298E28AD00FD56A1 /* MainView.swift in Sources */,
 				FF418B5229898CC000828CD3 /* SignInView.swift in Sources */,
 				FF418B612989B17F00828CD3 /* LineBreakerWithText.swift in Sources */,
+				FFEF767F2993A64D00D66DEC /* HistoryRestaurantCardView.swift in Sources */,
 				FF3F4F37298E282A00FD56A1 /* HomeView.swift in Sources */,
 				FFA4AD72298BD3B400F3A950 /* TakeImageService.swift in Sources */,
 				FFA4AD69298BBAC900F3A950 /* ImagePicker.swift in Sources */,
 				FF5FE9812990E4CB00CD6DF2 /* RecentlyBookedView.swift in Sources */,
+				FFEF767D2993846600D66DEC /* HistoryButton.swift in Sources */,
 				FF5FE9882991073900CD6DF2 /* ListOrGridMode.swift in Sources */,
 				FFA4AD70298BCEBA00F3A950 /* DropDownGnederPickerView.swift in Sources */,
 				FFA4AD7D298BF4C600F3A950 /* ConfirmationPasswordField.swift in Sources */,
@@ -469,11 +499,13 @@
 				FF5FE98F29912B9B00CD6DF2 /* Notification+Bookmark.swift in Sources */,
 				FF463F4A298ABA8F000A6723 /* DatePickerView.swift in Sources */,
 				FF418B592989AF3300828CD3 /* CustomTextFieldWithWrapperAround.swift in Sources */,
+				FFEF76812993A8D300D66DEC /* HistoryRestaurantCardButtons.swift in Sources */,
 				FF3D667E2992284B00FB35C1 /* SearchTextField.swift in Sources */,
 				FF418B652989C20300828CD3 /* TextField-Secure.swift in Sources */,
 				FF418B5E2989B0C800828CD3 /* PrimaryButton.swift in Sources */,
 				FFA4AD6E298BCE8500F3A950 /* ProfileImageView.swift in Sources */,
 				FF418B5529899AAE00828CD3 /* LogInView.swift in Sources */,
+				FFEF76842993AB1100D66DEC /* ViewModifier+BookingHistoryCard.swift in Sources */,
 				FF3F4F41298E294F00FD56A1 /* SearchView.swift in Sources */,
 				FFA4AD77298BE4AC00F3A950 /* SignUpView.swift in Sources */,
 				FF3D6685299239C300FB35C1 /* SearchResultsView.swift in Sources */,
