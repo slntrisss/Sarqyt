@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @State private var showRemoveBookmarkView = false
+    @State private var showCancelBookingView = false
     init(){
         UIScrollView.appearance().keyboardDismissMode = .onDrag
     }
@@ -41,7 +42,12 @@ struct MainView: View {
                 showRemoveBookmarkView = true
                 print("show")
             }
+            .onReceive(NotificationCenter.default.publisher(for: Notification.CancelBookingButtonTapped)) { _ in
+                showCancelBookingView = true
+                print("Modal view pop up")
+            }
             RemoveFromBookmarkView(showModalView: $showRemoveBookmarkView)
+            CancelBookingView(showModalView: $showCancelBookingView)
         }
     }
 }

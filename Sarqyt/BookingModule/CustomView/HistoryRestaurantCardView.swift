@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HistoryRestaurantCardView: View{
+    @Environment(\.colorScheme) var colorScheme
     let restaurantName: String
     let address: String
     let status: BookingView.BookingStatus
@@ -36,7 +37,7 @@ struct HistoryRestaurantCardView: View{
                         .padding(.horizontal)
                         .padding(.vertical, 10)
                         .background(
-                            status == .canceled ? Color(hex: "#FDDDDD") : Color(hex: "#E3F6EB")
+                            status == .canceled ? (colorScheme == .light ? Color(hex: "#FDDDDD") : Color(hex: "#4A2C33")) : (colorScheme == .light ? Color(hex: "#E3F6EB") : Color(hex: "#1E3430"))
                         )
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                 }

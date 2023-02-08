@@ -7,27 +7,11 @@
 
 import SwiftUI
 
-struct HistoryRestaurantCardDescriptionView: View{
-    let status: BookingView.BookingStatus
-    let description: String
-    var body: some View{
-        Label(description, systemImage: status == .canceled ? "exclamationmark.circle.fill" : "checkmark.square.fill")
-            .font(.caption2)
-            .foregroundColor(status == .canceled ? .red : .green)
-            .frame(maxWidth: .infinity)
-            .padding(.vertical, 10)
-            .background(
-                status == .canceled ? Color(hex: "#FDDDDD") : Color(hex: "#E3F6EB")
-            )
-            .clipShape(RoundedRectangle(cornerRadius: 10))
-    }
-}
-
 struct BookingView: View {
     @State private var searchQuery = ""
-    @State private var ongoingButtonTapped = true
+    @State private var ongoingButtonTapped = false
     @State private var completedButtonTapped = false
-    @State private var canceledButtonTapped = false
+    @State private var canceledButtonTapped = true
     
     private let canceledRestaurants = ["Palms Casino Resort", "The Mark Hotel", "Palazzo Versace Dubai", "Hotel Martinez", "Abraham St. Jones"]
     private let canceledRestaurantAddresses = ["London, UK", "Luxemburg, Germany", "Dubai, United Arab Emirates", "Amsterdam, Netherlands", "New York, USA"]
@@ -68,6 +52,7 @@ struct BookingView: View {
                             }
                         }
                 }
+                .padding(.bottom, 30)
                 
                 if ongoingButtonTapped{
                     ForEach(0..<5, id: \.self){ index in
@@ -123,5 +108,6 @@ struct BookingView_Previews: PreviewProvider {
         NavigationView{
             BookingView()
         }
+        .preferredColorScheme(.dark)
     }
 }

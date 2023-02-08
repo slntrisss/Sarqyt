@@ -41,36 +41,7 @@ struct RemoveFromBookmarkView: View {
                             
                             RestaurantCardInListModeView(userInteractionEnabled: false)
                             
-                            HStack{
-                                Button{
-                                    
-                                }label: {
-                                    Text("Cancel")
-                                        .font(.body.weight(.semibold))
-                                        .foregroundColor(colorScheme == .light ? .green.opacity(3) : .white)
-                                        .frame(maxWidth: .infinity)
-                                        .padding()
-                                        .background(
-                                            Capsule()
-                                                .fill(colorScheme == .light ? Color(hex: "E8F8EF") : .gray.opacity(0.15))
-                                        )
-                                }
-                                
-                                Button{
-                                    
-                                }label: {
-                                    Text("Yes, Remove")
-                                        .font(.body.weight(.semibold))
-                                        .foregroundColor(.white)
-                                        .frame(maxWidth: .infinity)
-                                        .padding()
-                                        .background(
-                                            Capsule()
-                                                .fill(.green)
-                                                .shadow(color: .green, radius: 1, x: 0, y: 1)
-                                        )
-                                }
-                            }
+                            PopUpViewActionButtons(buttonLabel1: "Cancel", buttonLabel2: "Yes, Remove")
                             .padding(.vertical)
                         }
                         .frame(height: currHeight)
@@ -115,6 +86,5 @@ struct RemoveFromBookmarkView: View {
 struct RemoveFromBookmarkView_Previews: PreviewProvider {
     static var previews: some View {
         RemoveFromBookmarkView(showModalView: .constant(true))
-            .preferredColorScheme(.dark)
     }
 }
