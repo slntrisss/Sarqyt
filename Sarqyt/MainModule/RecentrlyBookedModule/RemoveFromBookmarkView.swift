@@ -12,6 +12,10 @@ struct RemoveFromBookmarkView: View {
     @Binding var showModalView: Bool
     @State private var currHeight: CGFloat = 300
     @State private var prevDragAmount = CGSize.zero
+    
+    @State private var cancelButtonTapped = false
+    @State private var continueButtonTapped = false
+    
     let minHeight: CGFloat = 250
     let maxHeight: CGFloat = 320
     var body: some View {
@@ -41,7 +45,7 @@ struct RemoveFromBookmarkView: View {
                             
                             RestaurantCardInListModeView(userInteractionEnabled: false)
                             
-                            PopUpViewActionButtons(buttonLabel1: "Cancel", buttonLabel2: "Yes, Remove")
+                            PopUpViewActionButtons(buttonLabel1: "Cancel", buttonLabel2: "Yes, Remove", cancelButtonTapped: $cancelButtonTapped, continueButtonTapped: $continueButtonTapped)
                             .padding(.vertical)
                         }
                         .frame(height: currHeight)

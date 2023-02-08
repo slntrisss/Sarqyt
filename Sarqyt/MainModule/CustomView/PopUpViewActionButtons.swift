@@ -11,10 +11,12 @@ struct PopUpViewActionButtons: View{
     @Environment(\.colorScheme) var colorScheme
     let buttonLabel1: String
     let buttonLabel2: String
+    @Binding var cancelButtonTapped: Bool
+    @Binding var continueButtonTapped: Bool
     var body: some View{
         HStack{
             Button{
-                
+                cancelButtonTapped = true
             }label: {
                 Text(buttonLabel1)
                     .font(.body.weight(.semibold))
@@ -28,7 +30,7 @@ struct PopUpViewActionButtons: View{
             }
             
             Button{
-                
+                continueButtonTapped = true
             }label: {
                 Text(buttonLabel2)
                     .font(.body.weight(.semibold))

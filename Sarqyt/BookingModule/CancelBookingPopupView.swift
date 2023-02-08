@@ -11,6 +11,10 @@ struct CancelBookingPopupView: View {
     @Environment(\.colorScheme) var colorScheme
     @State private var currHeight: CGFloat = 320
     @Binding var showModalView: Bool
+    
+    @State private var cancelButtonTapped = false
+    @State private var continueButtonTapped = false
+    
     let maxHeight: CGFloat = 320
     let minHeight: CGFloat = 280
     var body: some View {
@@ -42,8 +46,17 @@ struct CancelBookingPopupView: View {
                             .font(.subheadline)
                             .multilineTextAlignment(.center)
                         
-                        PopUpViewActionButtons(buttonLabel1: "Cancel", buttonLabel2: "Yes, Continue")
-                            .padding(.bottom, 20)
+                        PopUpViewActionButtons(buttonLabel1: "Cancel", buttonLabel2: "Yes, Continue", cancelButtonTapped: $cancelButtonTapped, continueButtonTapped: $continueButtonTapped)
+                            .onChange(of: cancelButtonTapped, perform: { _ in
+                                showModalView = false
+                            })
+                            .onChange(of: continueButtonTapped, perform: { _ in
+                                showModalView = false
+                                
+                                NotificationCenter.default.post(name: Notification.ShowCancelBookingViewButtonTapped, object: nil)
+                            })
+                        .padding(.bottom, 20)
+
                     }
                 }
                 .frame(height: currHeight)
@@ -82,7 +95,7 @@ struct CancelBookingPopupView: View {
     }
 }
 
-struct CancelBookingView_Previews: PreviewProvider {
+struct CancelBookingPopupView_Previews: PreviewProvider {
     static var previews: some View {
         CancelBookingPopupView(showModalView: .constant(true))
     }

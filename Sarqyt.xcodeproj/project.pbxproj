@@ -58,6 +58,7 @@
 		FFEF76862993AF0100D66DEC /* CancelBookingPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEF76852993AF0100D66DEC /* CancelBookingPopupView.swift */; };
 		FFEF76882993B0F800D66DEC /* PopUpViewActionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEF76872993B0F800D66DEC /* PopUpViewActionButtons.swift */; };
 		FFEF768A2993B89600D66DEC /* HistoryRestaurantCardDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEF76892993B89600D66DEC /* HistoryRestaurantCardDescriptionView.swift */; };
+		FFEF768C2993C45100D66DEC /* CancelBookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEF768B2993C45100D66DEC /* CancelBookingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +114,7 @@
 		FFEF76852993AF0100D66DEC /* CancelBookingPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBookingPopupView.swift; sourceTree = "<group>"; };
 		FFEF76872993B0F800D66DEC /* PopUpViewActionButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewActionButtons.swift; sourceTree = "<group>"; };
 		FFEF76892993B89600D66DEC /* HistoryRestaurantCardDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryRestaurantCardDescriptionView.swift; sourceTree = "<group>"; };
+		FFEF768B2993C45100D66DEC /* CancelBookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBookingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 				FFEF767B2993845400D66DEC /* CustomView */,
 				FF3F4F42298E295900FD56A1 /* BookingView.swift */,
 				FFEF76852993AF0100D66DEC /* CancelBookingPopupView.swift */,
+				FFEF768B2993C45100D66DEC /* CancelBookingView.swift */,
 			);
 			path = BookingModule;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFEF768C2993C45100D66DEC /* CancelBookingView.swift in Sources */,
 				FF5FE9832991029800CD6DF2 /* RestaurantCardInGridModeView.swift in Sources */,
 				FF4DA7B7298A68E800A3A92A /* RegistrationView.swift in Sources */,
 				FF3F4F3F298E293100FD56A1 /* ProfileView.swift in Sources */,

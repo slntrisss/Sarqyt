@@ -13,6 +13,8 @@ struct BookingView: View {
     @State private var completedButtonTapped = false
     @State private var canceledButtonTapped = true
     
+    @State private var navigateToCancelBookingView = false
+    
     private let canceledRestaurants = ["Palms Casino Resort", "The Mark Hotel", "Palazzo Versace Dubai", "Hotel Martinez", "Abraham St. Jones"]
     private let canceledRestaurantAddresses = ["London, UK", "Luxemburg, Germany", "Dubai, United Arab Emirates", "Amsterdam, Netherlands", "New York, USA"]
     private let status = BookingStatus.ongoing
@@ -79,7 +81,17 @@ struct BookingView: View {
                         .historyRestaurantCardBackground()
                     }
                 }
+                
+                NavigationLink(isActive: $navigateToCancelBookingView) {
+                    CancelBookingView()
+                } label: {
+                    EmptyView()
+                }
+
             }
+            .onReceive(NotificationCenter.default.publisher(for: Notification.ShowCancelBookingViewButtonTapped), perform: { _ in
+                navigateToCancelBookingView = true
+            })
             .searchable(text: $searchQuery)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
